@@ -37,7 +37,7 @@ let isloggedIn = "akshay"
 
 
 
-// let someNumber = 32
+let someNumber = 32
 
 // let convertString = String(someNumber)
 // console.log(typeof convertString);
@@ -47,8 +47,8 @@ let isloggedIn = "akshay"
 // ******************************* oprations *******************************
 
 
-// let value = -2
-// let negvalue = +value
+let value = -2
+let negvalue = +value
 // console.log(negvalue);
 
 // console.log(2+2);
@@ -56,12 +56,33 @@ let isloggedIn = "akshay"
 // console.log(2*2);
 // console.log(2/2);
 // console.log(2**4);
-// console.log(2%3);
+// console.log(2%8);
+
+let str1 = "Jay "
+let str2 = "Swaminarayan"
+
+console.log(str1 + str2);
+
 
 // console.log(1+2+"3");
 // console.log(1+2+"3"+33);
 
+console.log(+true);
+console.log(+"");
+
+
 // gamecounter = 100
 // gamecounter++
 // // ++gamecounter
-// console.log(gamecounter);7
+// console.log(gamecounter);
+
+
+
+// let score1 = 100;
+// let score2 = ++score1;
+
+let score1 = 100;
+let score2 = score1++;
+
+console.log(score1);
+console.log(score2);
