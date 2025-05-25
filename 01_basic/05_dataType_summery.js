@@ -56,4 +56,40 @@ const myFunction = function () {
     console.log("Jay Swaminarayan");
 }
 
-console.table([typeof guru, typeof myObj, typeof myFunction])
+// console.table([typeof guru, typeof myObj, typeof myFunction])
+
+
+
+
+// +++++++++++++++++++++++++++++++++++ Stack and Heap memory +++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non primitive)
+
+/* fetch value from stack get copy value
+
+        but in Heap get Reference value when change value than change original value also
+*/
+
+let myName = "Akshay"
+
+let fullName = myName
+fullName = "Akshay Kumbhani"
+
+// console.log(myName);
+// console.log(fullName);
+
+
+let userOne = {
+    name: "Akshay",
+    age: 25
+}
+
+let userTwo = userOne
+
+console.table([userOne.name, userOne.age])
+console.table([userTwo.name, userTwo.age])
+
+userTwo.name = "Akshay Kumbhani"
+
+console.table([userOne.name, userOne.age])
+console.table([userTwo.name, userTwo.age])
