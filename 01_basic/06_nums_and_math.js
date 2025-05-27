@@ -26,7 +26,7 @@ const hundreds = 56415445425
 // console.log(Math);
 // console.log(Math.abs(-6));
 // console.log(Math.round(-64254.78));
-// console.log(Math.ceil(1.1));
+console.log(Math.ceil(1.1));
 // console.log(Math.floor(7.85));
 // console.log(Math.min(4,8,74,5,74,25,78,6,88,4,14,4,5,5,1,2));
 // console.log(Math.max(4,8,74,5,74,25,78,6,88,4,14,4,5,5,1,2));
