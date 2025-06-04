@@ -3,10 +3,10 @@ let myArray = [1, 2, 3, 4, 5, 6]
 
 let myArray2 = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
-myArray2.push(11, 12, 13, 14, 15)
-myArray2.pop()
-myArray2.unshift(-3, -2, -1, 0)
-myArray2.shift()
+myArray2.push(11, 12, 13, 14, 15)   // ADD VALUE IN ARRAY
+myArray2.pop()                      // REMOVE LAST VALUE
+myArray2.unshift(-3, -2, -1, 0)     // INSERT VALUE IN ARRAY'S START
+myArray2.shift()                    // REMOVE FIRST VALUE
 // console.log(myArray2);
 
 // console.log(myArray2.includes(8));
@@ -16,12 +16,21 @@ const newArray = myArray2.join()
 // console.log(newArray);
 // console.log(typeof newArray);
 
-const newary = myArray.slice(1,4)
-console.log(newary);
 
-console.log("A : ", myArray2);
 
-const newary2 = myArray.splice(1,4)
+
+
+
+
+
+
+console.log("A : ", myArray);
+
+const newary1 = myArray.slice(1,4)
+
+console.log(newary1);
+console.log("b : ", myArray);
+
+const newary2 = myArray.splice(1, 4)
 console.log(newary2);
-
-console.log("B : ", myArray2);
+console.log("C : ", myArray);
