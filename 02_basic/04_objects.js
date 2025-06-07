@@ -25,10 +25,9 @@ const obj2 = {3: "a", 4:"b"}
 
 // const obj3 = {obj1, obj2}
 // const obj3 = Object.assign({}, obj1, obj2)
-
 const obj3 = {...obj1, ...obj2}
 
-// console.log(obj3);
+console.log(obj3);
 
 const user = [
     {
@@ -78,10 +77,10 @@ const course = {
     courseInstractor: "Hitesh Choudhary"
 }
 
-console.log(course.courseInstractor);
+// console.log(course.courseInstractor);
 
 const {courseInstractor} = course
 const {courseInstractor: Instractor} = course
 
-console.log(courseInstractor);
-console.log(Instractor);
+// console.log(courseInstractor);
+// console.log(Instractor);
