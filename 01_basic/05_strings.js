@@ -1,7 +1,7 @@
 let name = 'Akshay'
 let number = 9558481639
 
-console.log(`My name is ${name} and my phone number is ${number}`);
+// console.log(`My name is ${name} and my phone number is ${number}`);
 
 const gameName = new String('Akshay Pravinbhai Kumbhani')
 
@@ -15,10 +15,10 @@ const gameName = new String('Akshay Pravinbhai Kumbhani')
 const newGame = gameName.substring(2, 9)
 // console.log(newGame);
 
-const sliceGame = gameName.slice(-10, 8) // most usable
+const sliceGame = gameName.slice(1, 8) // most usable
 // console.log(sliceGame);
 
-const newString = "    Hello     Akshay         "
+const newString = "    Hello Akshay         "
 // console.log(newString);
 // console.log(newString.trim());
 
@@ -26,5 +26,6 @@ const url = "https://akshay.com/akshay%20kumbhani"  // usable
 console.log(url.replace('%20', '_'));
 console.log(url.includes('akshay'));
 console.log(url.includes('diku'));
+console.log(url.includes('%20'));
 
-console.log(gameName.split(' '));
+console.log(gameName.split('a'));

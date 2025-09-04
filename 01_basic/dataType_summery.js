@@ -51,6 +51,7 @@ const myObj = {
 }
 
 // console.log(myObj.name, myObj.age);
+// console.log(myObj);
  
 const myFunction = function () {
     console.log("Jay Swaminarayan");
@@ -65,9 +66,9 @@ const myFunction = function () {
 
 // Stack (Primitive), Heap (Non primitive)
 
-/* fetch value from stack get copy value
+/*  fetch value from stack get copy value
 
-        but in Heap get Reference value when change value than change original value also
+    but in Heap get Reference value when change value than change original value also
 */
 
 let myName = "Akshay"
@@ -90,6 +91,7 @@ console.table([userOne.name, userOne.age])
 console.table([userTwo.name, userTwo.age])
 
 userTwo.name = "Akshay Kumbhani"
+userTwo.age = "26"
 
 console.table([userOne.name, userOne.age])
 console.table([userTwo.name, userTwo.age])

@@ -1,4 +1,6 @@
 let myDate = new Date()
+// console.log(myDate);
+
 
 // console.log(myDate.toDateString());                 // Tue May 27 2025
 // console.log(myDate.toISOString());                  // 2025-05-27T16:35:55.728Z
@@ -12,11 +14,15 @@ let myDate = new Date()
 
 // console.log(typeof myDate);                         // object
 
-// let newDate = new Date(2025, 2, 26, 8, 26, 2)
-let newDate = new Date("10-21-2025")
+let newDate = new Date(2025, 2, 26, 8, 26, 2)
+// newDate = new Date("10-21-2025")
 // console.log(newDate.toLocaleString());
 
 
+// console.log(new Date().toLocaleString());
+
+
+// console.log('Initialization complete', Temporal.Now.instant());      // Initialization complete
 
 
 
@@ -32,12 +38,12 @@ let myTime = Date.now()
 
 
 let customDate = new Date()
-console.log(customDate);
-console.log(customDate.getMonth() + 1);
-console.log(customDate.getDay().toString());
-console.log(typeof(customDate.getDay().toString()));
-console.log(customDate.getDate());
-console.log(customDate.getYear());
+// console.log(customDate);
+// console.log(customDate.getMonth() + 1);
+// console.log(customDate.getDay().toString());
+// console.log(typeof(customDate.getDay().toString()));
+// console.log(customDate.getDate());
+// console.log(customDate.getYear());
 
 
 
@@ -50,6 +56,5 @@ console.log(customDate.toLocaleString('default', {
 let myNewDate = customDate.toLocaleString('default', {
     weekday: "long"
 })
-
 
 console.log(myNewDate);
