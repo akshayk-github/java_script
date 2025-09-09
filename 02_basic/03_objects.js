@@ -1,14 +1,14 @@
 //  Singleton
-
 //  Object.create
-//  Object Literals
 
+
+//  Object Literals
 const mySym = Symbol("key1")
 
 const New_user = {
     name: "Akshay Kumbhani",
     age : 25,
-    newSym : [mySym],
+    // newSym : [mySym],
     [mySym] : "my New Key 1",
     "Mobile Number" : 54564468,
     location : "Surat",
@@ -17,6 +17,7 @@ const New_user = {
     lastLoginDays : ["Monday", "Tuessday"]
 }
 
+console.log(New_user);
 // console.log(New_user.email);
 // console.log(New_user["email"]);
 // console.log(New_user["Mobile Number"]);
@@ -25,7 +26,7 @@ const New_user = {
 // console.log(typeof New_user[mySym]);
 
 New_user.email = "akshay@yahoo.com"
-console.log(New_user.email);
+// console.log(New_user.email);
 
 // Object.freeze(New_user)
 New_user.email = "akshay@edge.com"
@@ -37,11 +38,14 @@ New_user.email = "akshay@edge.com"
 
 New_user.greeting = function() {
     console.log("Jay Swaminarayan");
+    // god : "Jay Swaminarayan"
 }
 
 New_user.greetingTwo = function() {
     console.log(`Hello, ${this.name}`);
 }
 
-console.log(New_user.greeting());
-console.log(New_user.greetingTwo());
+// console.log(New_user);
+// console.log(New_user.greeting);
+// console.log(New_user.greeting());
+// console.log(New_user.greetingTwo());

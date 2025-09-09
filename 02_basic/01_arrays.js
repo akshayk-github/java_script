@@ -1,5 +1,5 @@
 let myArray = [1, 2, 3, 4, 5, 6]
-// console.log(myArray[5]);
+// console.log(myArray[3]);
 
 let myArray2 = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
@@ -13,6 +13,8 @@ myArray2.shift()                    // REMOVE FIRST VALUE
 // console.log(myArray2.indexOf(8));
 
 const newArray = myArray2.join()
+
+// console.log(myArray2);
 // console.log(newArray);
 // console.log(typeof newArray);
 
@@ -24,13 +26,14 @@ const newArray = myArray2.join()
 
 
 
-console.log("A : ", myArray);
+console.log("Original Array : ", myArray);
 
 const newary1 = myArray.slice(1,4)
 
-console.log(newary1);
-console.log("b : ", myArray);
+console.log("Slice : ", newary1);
+console.log("Original Array After Slice : ", myArray);
 
 const newary2 = myArray.splice(1, 4)
-console.log(newary2);
-console.log("C : ", myArray);
+
+console.log("Splice Array : ", newary2);
+console.log("Original Array After Splice : ", myArray);
