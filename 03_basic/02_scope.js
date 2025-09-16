@@ -7,7 +7,6 @@ if (true) {
     // console.log("INNER: ", a);
 }
 
-
 // console.log(a);
 // console.log(b);
 // console.log(c);
@@ -15,32 +14,34 @@ if (true) {
 
 
 
-function one() {
-    const username = "Akshay"
+function one(){
+    const name = "Akshay"
 
-    function two() {
-        const surname = "Kumbhani"
-        // console.log(username);
+    function two(){
+        const surname = " Kumbhani"
+        console.log(name + surname);
     }
-    // console.log(surname);
-    // two()
+    // console.log(surname);   // This is not in a Scope
+    two()
 }
+
 // one()
 
 
 if (true) {
     const username = "Akshay"
-    // console.log(username);
-    
+
     if (username === "Akshay") {
-        const surname = " Kumbhani"
-        // console.log(surname);
-        
-        // console.log(username + surname);
+        const surname = "Kumbhani"
+        // console.log(username);
+    }
+    else {
+        console.log(`username is not matched`);
     }
     // console.log(surname);
 }
 // console.log(username);
+
 
 
 
@@ -60,17 +61,17 @@ if (true) {
 
 
 
-console.log(addOne(5));
+
+
+console.log(addOne(5));   // access before create function
 
 function addOne(num) {
-    return num + 1    
+    return num + 1
 }
 
 
-// console.log(addTwo(5));
-
-const addTwo = function(num) {
-    return num + 2    
+console.log(addTwo(5));   // in this scenario can't access before create function
+// Expression
+const addTwo = function (num) {
+    return num + 2
 }
-
-console.log(addTwo(5));

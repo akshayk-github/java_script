@@ -56,51 +56,32 @@ function loginUserMsg(username = "Admin") {
 
 
 
-function calculateCartPrice(val1, val2, ...prc1) {
-    console.log(val1);
-    console.log(val2);
-
-    return prc1
+function calculateCartPrice(val1, val2, ...num1) {     // in this case ... is *rest*
+    return num1;
 }
 
-// console.log(calculateCartPrice(500, 260, 400, 1050, 720));
-
-
-
-
-
-
-
-
+// console.log(calculateCartPrice(500, 600, 700, 800, 900));
 
 const user = {
     username: "Akshay",
-    price: 1999
+    role: "Entrepreneur, Philanthropist"
 }
 
-function handleObject(user) {
-    // console.log(`Username is ${user.username} and Price is ${user.price}`);   
+function handleObject(anyobject) {
+    // console.log(`Hello, my name is ${anyobject.username} and i'm a ${anyobject.role}.`);
 }
 
-// handleObject(user)
+// handleObject(user);
 handleObject({
-    username: "Diku",
-    price: 545
+    username: "Akshay",
+    role: "Enterprenuer and Philanthropist"
 })
 
+const myArray = [200, 100, 500, 400]
 
-
-
-
-
-
-
-
-const newArry = [200, 5400, 725, 517]
-
-function returnSecondValue(getNewArray) {
-    return getNewArray[1]
+function returnSecondValue(anyArray) {
+    return anyArray[2]
 }
 
-// console.log(returnSecondValue(newArry));
-console.log(returnSecondValue([503, 354, 5674, 5645]));
+// console.log(returnSecondValue(myArray));
+console.log(returnSecondValue([200, 100, 500, 400]));

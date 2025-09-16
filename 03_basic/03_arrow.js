@@ -1,62 +1,52 @@
 const user = {
     username: "Akshay",
-    price: 8425,
+    role: "Entrepreneur",
 
-    welcomMsg: function() {
-        console.log(`Hello ${this.username}, This is your Welcome Message`);
+    welcomeMsg: function() {
+        console.log(`Hey, ${this.username} you're ${this.role}`);
         console.log(this);
-        
     }
 }
 
+// console.log(user.welcomeMsg);
+// user.welcomeMsg()
+// user.username = "Mayur"
+// user.welcomeMsg()
 
-// user.welcomMsg()
-// user.username = "Jenish"
-// user.welcomMsg()
-
-// console.log(this);
-
-
+// console.log(this);  // current context is Empty (Because thus is node Environment)      -/-     in browser global object is Window
 
 
 
-// function one() {
-//     username : "akshay"
+
+// function Ak() {
+//     let username = "Akshay"
+//     // console.log(this.username);  //output: Undefined     // this context work only object
 //     console.log(this);
-//     // console.log(this.username);
 // }
 
-// const one = function() {
-//     username : "akshay"
-//     // console.log(this);
+// const Ak = function() {
+//     let username = "Akshay"
 //     console.log(this.username);
 // }
 
-// const one = () => {
-//     let username = "Akshay"
-//     console.log(this);   
-// }
-
-const one = () => {
+const Ak = () => {      // Arraw Function
     let username = "Akshay"
-    console.log(this);   
+    console.log(this.username);
 }
 
-// one()
+// Ak()
 
 
-// () => {}     // Basic Array Function
 
+//    basic arraw function
 // const addTwo = (num1, num2) => {
-//     return num1+num2
+//     return num1 + num2
 // }
 
+
+//    Implicit arraw function
 // const addTwo = (num1, num2) => num1 + num2
-
 // const addTwo = (num1, num2) => (num1 + num2)
+const addTwo = (num1, num2) => ({username: "aAkshay"})
 
-// console.log(addTwo(5,10));
-
-const addTwo = (num1, num2) => ({username: "Akshay"})
-
-console.log(addTwo());
+console.log(addTwo(5,5));

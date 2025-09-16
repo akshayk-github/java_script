@@ -1,15 +1,15 @@
 // Immediately Invoked Function Expression (IIFE)
 
-(function chai() {
-    // Name IIFE
+(function js() {
+    // Name IIFE (js)
     console.log("Jay Swaminarayan");
 })();
 
-( ()=> {
-    console.log("Laxminarayan Dev");
+(() => {
+    console.log("Harikrushn Maharaj");
 })();
 
-( (name)=> {
+((name) => {
     // Simple / Unamed IIFE
-    console.log(`Laxminarayan Dev ${name}`);
-})(`ni Jay`);
+    console.log(`Laxminarayan Dec ${name}`);
+})("ni jay")
