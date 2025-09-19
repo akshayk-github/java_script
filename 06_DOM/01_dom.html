@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .bg-black {
+            background-color: #121212;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">This is Heading
+            <span style="display: none;">Span text</span>
+        </h1>
+        <h2 class="head_2">This is Sub Heading 1</h2>
+        <h2 class="head_2">This is Sub Heading 2</h2>
+        <h2 class="head_2">This is Sub Heading 3</h2>
+        <h2 class="head_2">This is Sub Heading 4</h2>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, necessitatibus.</p>
+        
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list_item">One</li>
+            <li class="list_item">Two</li>
+            <li class="list_item">Three</li>
+            <li class="list_item">Four</li>
+        </ul>
+
+    </div>
+</body>
+
+<script>
+
+    let get = document.getElementById('title')
+    // get = document.getElementById('title').id
+    // get = document.getElementById('title').className
+    // get = document.getElementById('title').getAttribute('id')
+    // get = document.getElementById('title').getAttribute('class')
+    // get = document.getElementById('title').setAttribute('class', 'test')
+
+    // get.style.background = 'yellow'
+    // get.style.color = '#121212'
+    // get.style.borderRadius = '10px'
+    // get.style.padding = '15px'
+
+    // get = document.getElementById('title').textContent  //  show hidden content also
+    // get = document.getElementById('title').innerHTML
+    // get = document.getElementById('title').innerText
+    
+    // console.log(get);
+
+
+
+    // ==========================================================================================================
+
+
+
+    // let className = document.getElementsByClassName('heading')
+    className = document.getElementsByClassName('list_item')    //  Output is HTMLCollection - forEach can't work
+
+    // let liNewArray = Array.from(className)
+    // liNewArray.forEach((li) => {
+    //     li.style.color = "yellow"
+    // })
+
+    // console.log(liNewArray);
+
+
+
+    // ==========================================================================================================
+
+
+    
+    let head2 = document.querySelector('h2')
+    // head2 = document.querySelector('#title')
+    // head2 = document.querySelector('.head_2')
+    // head2 = document.querySelector('input[type="password"]')
+    // head2 = document.querySelector('p:first-child')
+
+    // console.log(head2);
+
+    let myUl = document.querySelector('ul')
+    // myUl = document.querySelector('li')
+    // myUl.style.background = "maroon"
+    // myUl.style.padding = "10px"
+    // myUl.innerText = "1 Number"
+
+    // console.log(myUl);
+
+
+
+    // ==========================================================================================================
+
+
+
+    let allLi = document.querySelectorAll('li')     //  output is *nodelist* not array
+    // allLi[1].style.color = "yellow"
+
+    // allLi.forEach((i) => {
+    //     i.style.background = "maroon"
+    //     i.style.padding = "10px"
+    //     i.style.marginBlock = "4px"
+    // })
+
+    // console.log(allLi);
+
+    let myH1 = document.querySelectorAll('h1')
+    // myH1[0].style.color = "yellow"
+
+    // console.log(myH1);
+
+
+    let allH2 = document.querySelectorAll('h2')
+    // console.log(allH2);
+
+    let headSecond = allH2[2].innerText
+    // console.log(headSecond);
+
+    let subHead = document.querySelectorAll('.head_2')
+    // subHead = subHead[1].innerText
+    subHead = subHead[1].innerText = "Orange"
+    // subHead = subHead
+
+    subHead.forEach((i) => {
+        i.style.color = 'orange'
+    })
+
+    console.log(subHead);
+
+
+
+
+    // ==========================================================================================================
+
+
+    
+    
+
+
+</script>
+
+</html>
