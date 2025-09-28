@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .color_box {
+            height: 10vh;
+            width: 10vh;
+            box-shadow: 0 0 60px -10px #ffffff40;
+            border: 2px solid #ffffff30;
+        }
+
+        .main_color_box {
+            display: flex;
+            gap: 10px;
+        }
+
+        #green {
+            background-color: #082a08;
+        }
+
+        #cyan {
+            background-color: #005549;
+        }
+
+        #purple {
+            background-color: #78115b;
+        }
+
+        #blue {
+            background-color: #02528f;
+        }
+
+        #maroon {
+            background-color: #550000;
+        }
+    </style>
+</head>
+
+<body>
+        <h2>Color Theme Switcher</h2>
+        <div class="main_color_box">
+            <div class="color_box" id="green"></div>
+            <div class="color_box" id="cyan"></div>
+            <div class="color_box" id="purple"></div>
+            <div class="color_box" id="blue"></div>
+            <div class="color_box" id="maroon"></div>
+        </div>
+</body>
+
+<script>
+
+    const buttons = document.querySelectorAll('.color_box')
+    const body = document.querySelector('body')
+    
+    buttons.forEach(function(color_box){
+        console.log(color_box);
+        color_box.addEventListener('click', function (e) {
+            console.log(e);
+            console.log(e.target);
+            if (e.target.id === 'green') {
+                // body.style.backgroundColor = "#082a08"
+                body.id = e.target.id
+            }
+            if (e.target.id === 'cyan') {
+                // body.style.backgroundColor = "#082a08"
+                body.id = e.target.id
+            }
+            if (e.target.id === 'purple') {
+                // body.style.backgroundColor = "#082a08"
+                body.id = e.target.id
+            }
+            if (e.target.id === 'blue') {
+                // body.style.backgroundColor = "#082a08"
+                body.id = e.target.id
+            }
+            if (e.target.id === 'maroon') {
+                // body.style.backgroundColor = "#082a08"
+                body.id = e.target.id
+            }
+        })
+    })
+
+</script>
+
+</html>

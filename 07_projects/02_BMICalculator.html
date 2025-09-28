@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator</title>
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        form p {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #121212;
+            background: #262626;
+            margin-top: 5px;
+            outline: none;
+            color: #fff;
+        }
+
+        label {
+            color: #ffffff50;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+        }
+
+        div#result {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>BMI Calculator</h2>
+
+    <form action="">
+        <p>
+            <label for="">Height in CM:</label>
+            <input type="tel" name="" id="height">
+        </p>
+        <p>
+            <label for="">Weight in KG:</label>
+            <input type="tel" name="" id="weight">
+        </p>
+        <button type="submit">Calculate</button>
+        <div id="result"></div>
+        <div id="note"></div>
+    </form>
+
+</body>
+
+<script>
+
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault()
+
+        const height = parseInt(document.querySelector('#height').value)
+        const weight = parseInt(document.querySelector('#weight').value)
+        const result = document.querySelector('#result')
+        const note = document.querySelector('#note')
+
+        if (height === '' || height < 1 || isNaN(height)) {
+            result.innerHTML = `Error : Please give valid Height`
+            result.style.color = 'red'
+        } else if (weight === '' || weight < 1 || isNaN(weight)) {
+            result.innerHTML = `Error : Please give valid weight`
+            result.style.color = 'red'
+        } else {
+            const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+            // show the result
+            result.innerHTML = `${bmi}`
+            result.style.color = '#fff'
+
+            if (bmi < 18.5) {
+                note.innerHTML = `You're BMI weight is Underweight`
+            }
+            if (bmi > 18.5 && bmi < 25) {
+                note.innerHTML = `You're BMI weight is Normal`
+            }
+            if (bmi > 25 && bmi < 30) {
+                note.innerHTML = `You're BMI weight is Overweight`
+            }
+            if (bmi > 30) {
+                note.innerHTML = `You're BMI weight is Obesity`
+            }
+        }
+    })
+
+</script>
+
+</html>
